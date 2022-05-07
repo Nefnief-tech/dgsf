@@ -1,0 +1,72 @@
+{
+  "command": [
+    {
+      "name": "User Joins Server",
+      "perms": [],
+      "actions": [
+        {
+          "name": "hhhhhh",
+          "category": "Message",
+          "type": "Send Direct Message",
+          "user": "<@${tempVars.newuser.id}>",
+          "messagetext": "<@${tempVars.newuser.id}> wilkommen auf ${dbsVars.guild.name} du bist der ${dbsVars.guild.memberCount} user",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ],
+      "var": {
+        "user": "newuser"
+      }
+    },
+    {
+      "name": "Any Message",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "msguser"
+      }
+    },
+    {
+      "name": "User Kicked",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "kickuser"
+      }
+    },
+    {
+      "name": "User Banned",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "banuser"
+      }
+    },
+    {
+      "name": "Bot Initialization",
+      "perms": [],
+      "actions": [
+        {
+          "name": "rtzuiopü",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "wilkommen-und-richtlinien",
+          "color": "FF0000",
+          "title": "Scheis konkurenz",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Du wirst gebannt",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ],
+      "var": {}
+    }
+  ]
+}

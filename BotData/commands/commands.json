@@ -1,0 +1,465 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "!help",
+              "value": "Shows this menu",
+              "inline": "true"
+            },
+            {
+              "name": "!info",
+              "value": "Shows some info",
+              "inline": "true"
+            }
+          ],
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1FFF57",
+          "title": "Help Menu",
+          "url": "",
+          "authorname": "Bot Name Here",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "This is the embed description, replace this with some info about your bot!",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "actions": [
+        {
+          "name": "show info",
+          "category": "Message",
+          "type": "Send Message",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.DefaultChannel.id}",
+          "messagetext": "Command Author: ${dbsVars.CommandAuthor.displayName}\nTagged author: <@${dbsVars.CommandAuthor.id}>\nYou can insert more values by clicking the \"Insert Variable\" button next to this field!",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "ticket",
+      "actions": [
+        {
+          "name": "ghjklöä",
+          "category": "Channel Action",
+          "type": "Create Channel",
+          "messageActionRows": [],
+          "channelname": "Ticket ${dbsVars.CommandAuthor.displayName}",
+          "chancategory": "Suport",
+          "reason": "gtzhujikolpöüä",
+          "channeltype": "Text",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "fghjkl",
+          "category": "Bot Action",
+          "type": "Wait",
+          "messageActionRows": [],
+          "increment": "seconds",
+          "time": "30"
+        },
+        {
+          "name": "vbnmk,l",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "Ticket ${dbsVars.CommandAuthor.displayName}",
+          "reason": "nichts"
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "actions": [
+        {
+          "name": "hjkl",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "lololololololololololo",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "fghjklöä#4",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${tempVars.lololololololololololo}",
+          "reason": "lolololo"
+        }
+      ]
+    },
+    {
+      "name": "setup",
+      "actions": [
+        {
+          "name": "lo",
+          "category": "Channel Action",
+          "type": "Create Channel",
+          "messageActionRows": [],
+          "channelname": "Verify",
+          "chancategory": "Verify",
+          "reason": "sdfgb",
+          "channeltype": "Text",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "verify",
+      "actions": [
+        {
+          "name": "sdrftzuiopü+",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "hallo",
+          "min": "1000",
+          "max": "10000",
+          "savevartype": "temp"
+        },
+        {
+          "name": "asdfghujkiopü+",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "Verify",
+          "color": "19C2FF",
+          "title": "Verifycode",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Code: ${tempVars.hallo}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "cvghjmk,.",
+          "category": "Bot Action",
+          "type": "Wait",
+          "messageActionRows": [],
+          "increment": "seconds",
+          "time": "10"
+        },
+        {
+          "name": "sdfghjklöä#",
+          "category": "Variable",
+          "type": "Check Variable Value",
+          "trueActions": [
+            {
+              "name": "sdfgzhuiopüä",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "verify",
+              "color": "43FF26",
+              "title": "Veriviziert",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "Du bist nun veriviziert",
+              "thumbnail": "",
+              "image": "",
+              "footer": "",
+              "timestamp": "BOOL_TRUE@@",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            },
+            {
+              "name": "dfghjk",
+              "category": "User Action",
+              "type": "Add Role to User",
+              "messageActionRows": [],
+              "user": "${dbsVars.CommandAuthor.id}",
+              "rolename": "Verify"
+            },
+            {
+              "name": "vghj",
+              "category": "Bot Action",
+              "type": "Wait",
+              "messageActionRows": [],
+              "increment": "minutes",
+              "time": "1"
+            },
+            {
+              "name": "vbnm,.-",
+              "category": "Channel Action",
+              "type": "Delete All Messages",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "msgcount": "4"
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "sdfghzjuklöä",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [],
+              "channelname": "verify",
+              "color": "FF0000",
+              "title": "EROR #20015",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "Bitte versuche es erneut",
+              "thumbnail": "",
+              "image": "",
+              "footer": "",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            },
+            {
+              "name": "vghj_1",
+              "category": "Bot Action",
+              "type": "Wait",
+              "messageActionRows": [],
+              "increment": "minutes",
+              "time": "1"
+            },
+            {
+              "name": "vbnm,.-_2",
+              "category": "Channel Action",
+              "type": "Delete All Messages",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "msgcount": "4"
+            }
+          ],
+          "messageActionRows": [],
+          "varname": "hallo",
+          "savevartype": "temp",
+          "compare": "equal to",
+          "value": "${dbsVars.CommandAuthor.lastMessage}"
+        }
+      ]
+    },
+    {
+      "name": "cc",
+      "actions": [
+        {
+          "name": "fghjk",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "lolololololo",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "fghj",
+          "category": "Channel Action",
+          "type": "Create Channel",
+          "messageActionRows": [],
+          "channelname": "${tempVars.lolololololo}",
+          "chancategory": "user channel",
+          "reason": "fghjklö",
+          "channeltype": "Voice",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "234567890",
+          "category": "Bot Action",
+          "type": "Wait",
+          "messageActionRows": [],
+          "increment": "hours",
+          "time": "6"
+        },
+        {
+          "name": "fghjklö",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${tempVars.lolololololo}",
+          "reason": "lolololo0"
+        }
+      ]
+    },
+    {
+      "name": "member",
+      "actions": [
+        {
+          "name": "dadadadadad",
+          "category": "Message",
+          "type": "Send Message",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "${dbsVars.guild.memberCount}",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "v,",
+      "actions": [
+        {
+          "name": "xcvbnm,.-",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "",
+              "value": "",
+              "inline": "true"
+            }
+          ],
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1FFFF0",
+          "title": "How To Verify: Du must in den Channel !verify eingeben und dann den Zahlencode der vom Bot gesendet wurde in den Chat eingeben.",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "VIP",
+      "actions": [
+        {
+          "name": "fghjklöä",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "dfghjkl",
+          "min": "1000",
+          "max": "10000",
+          "savevartype": "temp"
+        },
+        {
+          "name": "dfghjklö",
+          "category": "Message",
+          "type": "Send Message",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "${tempVars.dfghjkl}",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "m,.-_2_1",
+          "category": "Bot Action",
+          "type": "Wait",
+          "messageActionRows": [],
+          "increment": "seconds",
+          "time": "5"
+        },
+        {
+          "name": "cvbnm,",
+          "category": "Variable",
+          "type": "Check Variable Value",
+          "trueActions": [
+            {
+              "name": "dadadadadad_10_1",
+              "category": "Message",
+              "type": "Send Message",
+              "messageActionRows": [],
+              "channelname": "${dbsVars.CommandChannel.id}",
+              "messagetext": "${dbsVars.guild.memberCount}",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "varname": "${tempVars.dfghjkl}",
+          "savevartype": "temp",
+          "compare": "equal to",
+          "value": "${dbsVars.CommandAuthor.lastMessage}"
+        }
+      ]
+    },
+    {
+      "name": "Youtube",
+      "actions": [
+        {
+          "name": "cvb cdfgb cvb",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "EDFFDE",
+          "title": "Youtube",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "Ban",
+      "actions": [
+        {
+          "name": "ujm zhnb",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "lollllaaaaa",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "category": "User Action",
+          "type": "Ban User",
+          "messageActionRows": [],
+          "user": "${tempVars.lollllaaaaa.id}",
+          "reason": "lol",
+          "days": "365"
+        }
+      ]
+    },
+    {
+      "name": "LOL",
+      "description": "Send any meme",
+      "options": []
+    }
+  ]
+}

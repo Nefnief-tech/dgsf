@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "type": "event",
+      "name": "User Joins Server",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "newuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "153c4ed5-2323-4a59-b5e9-55f2c02b2369"
+          ]
+        }
+      ],
+      "x": 99,
+      "y": 100,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Any Message",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888",
+      "variables": {
+        "user": "msguser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 101,
+      "y": 499,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Kicked",
+      "guid": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "kickuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 99,
+      "y": 250,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Banned",
+      "guid": "77ebbc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "banuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 100,
+      "y": 375,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Bot Initialization",
+      "guid": "0101bc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "274566c3-62e2-4519-b5d6-6cd5cd34562e"
+          ]
+        }
+      ],
+      "x": 100,
+      "y": 625,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "hhhhhh",
+      "guid": "153c4ed5-2323-4a59-b5e9-55f2c02b2369",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e"
+        }
+      ],
+      "x": 280,
+      "y": 120,
+      "rtype": "Message",
+      "rsubtype": "Send Direct Message",
+      "formdata": [
+        "<@${tempVars.newuser.id}>",
+        "<@${tempVars.newuser.id}> wilkommen auf ${dbsVars.guild.name} du bist der ${dbsVars.guild.memberCount} user",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "user",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "rtzuiopü",
+      "guid": "274566c3-62e2-4519-b5d6-6cd5cd34562e",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0101bc23-2003-4f05-ab69-bc9ecb4f067e"
+        }
+      ],
+      "x": 315,
+      "y": 635,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "wilkommen-und-richtlinien",
+        "FF0000",
+        "Scheis konkurenz",
+        "",
+        "",
+        "",
+        "",
+        "Du wirst gebannt",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    }
+  ]
+}
