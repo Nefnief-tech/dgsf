@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+
+
+    <style>
+        body { background-color: #fff; color: #000; padding: 0; margin: 0; font-family: 'PT Sans', sans-serif; }
+        .container { width: 900px; margin: auto; padding-top: 1em; }
+        .container .ism-slider { margin-left: auto; margin-right: auto; }
+        h1 {
+            color: rgb(91, 131, 243);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+        
+    </style>
+    <style>
+      #hcg-slider-1 .hcg-slide-container {
+        width: auto;
+        height: auto;
+      }
+      .hcg-slider {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hcg-slide-container {
+        max-width: 100%;
+        display: inline-block;
+        position: relative;
+      }
+      .hcg-slides {
+        display: none;
+        text-align: center;
+        overflow: hidden;
+      }
+      .hcg-slides img {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        border-radius: 5px;
+        border: solid 1px #a0a0a0;
+        vertical-align: middle;
+      }
+      .hcg-slide-dot-control {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .hcg-slide-dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .hcg-slide-dot.dot-active {
+        background-color: #717171;
+      }
+      /************CSS Animation***********/
+      
+      .animated { 
+        animation-name: fadeIn; 
+        animation-duration: 1s;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .fadeIn {
+        animation-name: fadeIn;
+      }
+      
+      
+      </style>
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand-title">Zahnarzt Dr. Hirsch Brüggemann</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Angebote.html">Dienstleistungen</a></li>
+        <li><a href="Personal.html">Personal</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+    <div class="eins">
+    <h1>
+        Unsere Dienstleistungen:
+    </h1>
+    </div>
+    <style>
+      #hcg-slider-1 .hcg-slide-container {
+        width: auto;
+        height: auto;
+      }
+      .hcg-slider {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hcg-slide-container {
+        max-width: 100%;
+        display: inline-block;
+        position: relative;
+      }
+      .hcg-slides {
+        display: none;
+        text-align: center;
+        overflow: hidden;
+      }
+      .hcg-slides img {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        border-radius: 5px;
+        border: solid 1px #a0a0a0;
+        vertical-align: middle;
+      }
+      .hcg-slide-dot-control {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .hcg-slide-dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .hcg-slide-dot.dot-active {
+        background-color: #717171;
+      }
+      /************CSS Animation***********/
+      
+      .animated { 
+        animation-name: fadeIn; 
+        animation-duration: 1s;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .fadeIn {
+        animation-name: fadeIn;
+      }
+      
+      
+      </style>
+      </head>
+      <body>
+      <div id="hcg-slider-1" class="hcg-slider">
+      <div class="hcg-slide-container">
+        <div class="hcg-slider-body">
+          <a class="hcg-slides animated" style="display:block">
+            <span class="hcg-slide-number">1/5</span>
+            <img src="https://html-generator.com/uploads/images/2022/05/11/58596MCM0C9FGX7.png" alt="58596MCM0C9FGX7.png">
+            <span class="hcg-slide-text">58596MCM0C9FGX7.png</span>
+          </a>
+        </div>
+      </div>
+      <div class="hcg-slide-dot-control"></div>
+      </div>
+      
+      
+      <script>
+      (function(){
+      //If you want to include more images, add the link name and URL of the image in the array list below.
+        let images_list = [
+          {"url":"https://html-generator.com/uploads/images/2022/05/11/58596MCM0C9FGX7.png","name":"58596MCM0C9FGX7.png","link":""},
+          {"url":"https://html-generator.com/uploads/images/2022/05/11/58836YEDXFXJJBO.png","name":"58836YEDXFXJJBO.png","link":""},
+          {"url":"https://html-generator.com/uploads/images/2022/05/11/69743_DHWXM_CZA.png","name":"69743_DHWXM_CZA.png","link":""},
+          {"url":"https://html-generator.com/uploads/images/2022/05/11/69991NY80KJE9UE.png","name":"69991NY80KJE9UE.png","link":""},
+          {"url":"https://html-generator.com/uploads/images/2022/05/11/702195GWCTB6N3V.png","name":"702195GWCTB6N3V.png","link":""},
+          {"url":"https://html-generator.com/uploads/images/2022/05/11/70473OKP7YC689H.png","name":"70473OKP7YC689H.png","link":""}
+        ];
+      
+        let slider_id = document.querySelector("#hcg-slider-1");
+      
+        // append all images
+        let dots_div = "";
+        let images_div = "";
+        for (let i = 0; i < images_list.length; i++) {
+          // if no link without href="" tag
+          let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+          images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:block"':'')+'>'+
+                  '<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+                 '</a>';
+          dots_div += '<span class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></span>';
+        }
+        slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+        slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+      
+        let slide_index = 0;
+      
+        let images = slider_id.querySelectorAll(".hcg-slides");
+        let dots = slider_id.querySelectorAll(".hcg-slide-dot");
+        function showSlides() {
+          if (slide_index > images.length-1) {
+            slide_index = 0;
+          }
+          if (slide_index < 0) {
+            slide_index = images.length-1;
+          }
+          for (let i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+            dots[i].classList.remove("dot-active");
+            if (i == slide_index) {
+              images[i].style.display = "block";
+              dots[i].classList.add("dot-active");
+            }
+          }
+        }
+      
+        function dot_click(event) {
+          slide_index = event.target.dataset.id;
+          showSlides();
+        }
+      
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].addEventListener("click", dot_click, false);
+        }
+        setInterval(function(){
+          slide_index++;
+          showSlides();
+        }, 10000);
+      
+      })();
+      
+      </script>
+</html>
