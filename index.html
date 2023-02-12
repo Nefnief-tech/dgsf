@@ -12,10 +12,17 @@
 <link rel="stylesheet" href="background_styles.css">
       <link rel="stylesheet" href="styles.css">
       <script src="script.js" defer></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="darkmode.css">
 
     
 
+
+
+
     <style>
+
+
     body {
         font-family: 'PT Sans', sans-serif;
     background-color: rgb(255, 255, 255);
@@ -136,6 +143,44 @@
     width: 40px;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
     </style>
 </head>
@@ -154,10 +199,21 @@
             <li><a href="Angebote.html">Dienstleistungen</a></li>
             <li><a href="Personal.html">Personal</a></li>
             <li><a href="Kontakt.html">Email</a></li>
-            <li><a href="darkhome.html"><img class="dark" src="d1.png"></a></li>
+            <li><button onclick="myFunction()">Darkmode</button></li>
           </ul>
         </div>
       </nav>
+
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
 
 
     <div class="kopf">
@@ -204,5 +260,57 @@
 <a class="link" href="impressum.html">Impressum</a>
 </div>
     
+<dialog class="modal">
+    <h1>Hallo</h1>
+    <button onclick="close-dialog()"></button>
+</dialog>
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
