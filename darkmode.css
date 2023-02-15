@@ -15,7 +15,7 @@ body {
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
-    padding-top: 1rem;
+    margin-top: 1rem;
   }
   .dark-mode h1 {
     color: white;
