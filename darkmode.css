@@ -9,15 +9,21 @@ body {
     color: white;
   }
   button {
-    background-color: #66Cdaa;
+    background-color: rgb(40, 42, 53);
     color: white;
     border: none;
     padding: 10px;
     font-size: 20px;
-    border-radius: 5px;
-    margin-top: 1rem;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
   }
-  .dark-mode h1 {
-    color: white;
+  .dark-mode span {
+   color: white;
 
+  }
+  .dark-mode button {
+    background-color: white;
+    color: black;
   }
