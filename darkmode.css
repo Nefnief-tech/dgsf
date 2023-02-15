@@ -1,25 +1,22 @@
 body {
-    background: var(--primary-color);
-    transition: 2s;
-}
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: rgb(40, 42, 53);
+    color: white;
+  }
+  button {
+    background-color: #20B2aa;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .dark-mode h1 {
+    color: white;
 
-        dialog:not([open]) {
-            display: none;
-        }
-        button {
-            background-color: #66Cdaa;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 12px;
-        }
-        .dark-mode {
-            background-color: rgb(32, 33, 36);
-            color: #ffffff;
-        }
+  }
