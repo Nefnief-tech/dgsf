@@ -98,7 +98,8 @@ body {
 }
 @media screen and (max-width: 500px){
     .brand-title {
-        font-size: 20px;
+        font-size: 21px;
+        font-weight: 1000;
         
     }
       }
