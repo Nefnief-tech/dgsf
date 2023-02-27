@@ -96,3 +96,9 @@ body {
         display: flex;
     }
 }
+@media screen and (max-width: 500px){
+    .brand-title {
+        font-size: 20px;
+        
+    }
+      }
