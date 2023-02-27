@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Mode Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+        
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .toggle-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Dark Mode Toggle</h1>
+
+    <div class="toggle-container">
+      <input type="checkbox" id="darkModeToggle"/>
+      <label for="darkModeToggle">Toggle Dark Mode</label>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet...</p>
+</div>
+
+<script src="app.js">
+
+</script>
+
+</body>
+</html>
