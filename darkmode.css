@@ -5,26 +5,15 @@ body {
     transition: 1s;
   }
   
-  .dark-mode {
-    background-color: rgb(40, 42, 53);
-    color: white;
-  }
-  button {
-    background-color: rgb(40, 42, 53);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 25px;
-    margin-top: 0.5rem;
-    margin-right: 0.3rem;
-    margin-left: 0.3rem;
-  }
-  .dark-mode span {
-   color: white;
+  .body {
+    transition: background-color 0.3s ease;
+}
 
-  }
-  .dark-mode button {
-    background-color: white;
-    color: black;
-  }
+.darkmode {
+    background-color: #333;
+    color: #fff;
+}
+
+.darkmode-toggle {
+    cursor: pointer;
+}
