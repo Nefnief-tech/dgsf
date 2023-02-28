@@ -35,3 +35,36 @@
             background-color: #fff;
             color: #333;
         }
+        #cookie-banner {
+            display: none;
+              position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            background-color: #66cdaa;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          #cookie-banner p {
+            margin: 0rem;
+          }
+          
+          #accept-cookie {
+            background-color: #59f189;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            border-radius: 1rem;
+          }
+          .cookie {
+              width: 50px;
+              height: 50px;
+              margin-right: 10px;
+              display: flex;
+              justify-content: right;
+          }

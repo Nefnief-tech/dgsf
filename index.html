@@ -212,6 +212,17 @@ h1 {
       </nav>
 
 
+
+
+    <div id="cookie-banner">
+    
+        <img class="cookie" src="Download-removebg-preview.png" alt="cookie">
+        
+        <p>We use cookies to ensure you get the best experience on our website. By continuing to browse the site, you agree to our use of cookies.</p>
+        <button id="accept-cookie">Accept</button>
+    </div>
+
+
       <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -285,8 +296,63 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
+
+
+    // Check if the cookie has already been set
+    if (document.cookie.indexOf('cookieAccepted=true') === -1) {
+  // If not, display the cookie banner
+  var cookieBanner = document.getElementById('cookie-banner');
+  cookieBanner.style.display = 'block';
+
+  // When the user clicks the accept button, set the cookie and hide the banner
+  var acceptButton = document.getElementById('accept-cookie');
+  acceptButton.addEventListener('click', function() {
+    document.cookie = 'cookieAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+    cookieBanner.style.display = 'none';
+  });
+}
+
+
 </script>
         <style>
+
+
+#cookie-banner {
+  display: none;
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: #66cdaa;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#cookie-banner p {
+  margin: 0rem;
+}
+
+#accept-cookie {
+  background-color: #59f189;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+}
+.cookie {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+
+
 body {
     transition: background-color 0.3s ease;
 }
@@ -466,7 +532,6 @@ body {
         }
     }
 </script>
-
 
 
 
