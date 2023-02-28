@@ -1,43 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dark Mode Example</title>
-    <style>
-        body {
-            transition: background-color 0.5s ease;
-        }
-        .dark-mode {
-            background-color: #333;
-            color: white;
-        }
-        .btn {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .dark-mode .btn {
-            background-color: #fff;
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <button onclick="toggleDarkMode()" class="btn">Toggle Dark Mode</button>
+<div id="cookie-banner">
+    <p>We use cookies to ensure you get the best experience on our website. By continuing to browse the site, you agree to our use of cookies.</p>
+    <button id="accept-cookie">Accept</button>
+  </div>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            document.cookie = "darkmode=" + (document.body.classList.contains('dark-mode') ? 'true' : 'false');
-        }
+  <style>
+    #cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-        window.onload = function() {
-            if (document.cookie.indexOf('darkmode=true') !== -1) {
-                document.body.classList.add('dark-mode');
-            }
-        }
-    </script>
-</body>
-</html>
+#cookie-banner p {
+  margin: 0;
+}
+
+#accept-cookie {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  </style>
+  <script>
+    // Check if the cookie has already been set
+if (document.cookie.indexOf('cookieAccepted=true') === -1) {
+  // If not, display the cookie banner
+  var cookieBanner = document.getElementById('cookie-banner');
+  cookieBanner.style.display = 'block';
+
+  // When the user clicks the accept button, set the cookie and hide the banner
+  var acceptButton = document.getElementById('accept-cookie');
+  acceptButton.addEventListener('click', function() {
+    document.cookie = 'cookieAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+    cookieBanner.style.display = 'none';
+  });
+}
+
+  </script>
