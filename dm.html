@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Dark Mode Toggle</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            transition: background-color 0.5s ease;
-        }
+  </head>
+  <body>
+    <button class="darkmode-toggle">Toggle Dark Mode</button>
+
+         <script>
+    const toggleButton = document.querySelector('.darkmode-toggle');
+        const body = document.querySelector('body');
         
-        .dark-mode {
-            background-color: #222;
-            color: white;
-        }
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('darkmode');
+            if (body.classList.contains('darkmode')) {
+                document.cookie = 'colorMode=dark';
+            } else {
+                document.cookie = 'colorMode=light';
+            }
+        });
         
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .toggle-container {
-            display: flex;
-            align-items: center;
-        }
-        
-        .toggle-container input[type="checkbox"] {
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
+        window.addEventListener('load', () => {
+            const colorMode = document.cookie.split('; ').find(row => row.startsWith('colorMode')).split('=')[1];
+            if (colorMode === 'dark') {
+                body.classList.add('darkmode');
+            }
+        });
+        </script>
+        <style>
+body {
+    transition: background-color 0.3s ease;
+}
 
-<div class="container">
-    <h1>Dark Mode Toggle</h1>
+.darkmode {
+    background-color: #333;
+    color: #fff;
+}
 
-    <div class="toggle-container">
-      <input type="checkbox" id="darkModeToggle"/>
-      <label for="darkModeToggle">Toggle Dark Mode</label>
-    </div>
-
-    <p>Lorem ipsum dolor sit amet...</p>
-</div>
-
-<script src="app.js">
-
-</script>
-
-</body>
+.darkmode-toggle {
+    cursor: pointer;
+}
+        </style>
+  </body>
 </html>
