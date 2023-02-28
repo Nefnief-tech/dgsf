@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Dark Mode Toggle</title>
-  </head>
-  <body>
-    <button class="darkmode-toggle">Toggle Dark Mode</button>
+<head>
+    <title>Dark Mode Example</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .dark-mode .btn {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleDarkMode()" class="btn">Toggle Dark Mode</button>
 
-         <script>
-    const toggleButton = document.querySelector('.darkmode-toggle');
-        const body = document.querySelector('body');
-        
-        toggleButton.addEventListener('click', () => {
-            body.classList.toggle('darkmode');
-            if (body.classList.contains('darkmode')) {
-                document.cookie = 'colorMode=dark';
-            } else {
-                document.cookie = 'colorMode=light';
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.cookie = "darkmode=" + (document.body.classList.contains('dark-mode') ? 'true' : 'false');
+        }
+
+        window.onload = function() {
+            if (document.cookie.indexOf('darkmode=true') !== -1) {
+                document.body.classList.add('dark-mode');
             }
-        });
-        
-        window.addEventListener('load', () => {
-            const colorMode = document.cookie.split('; ').find(row => row.startsWith('colorMode')).split('=')[1];
-            if (colorMode === 'dark') {
-                body.classList.add('darkmode');
-            }
-        });
-        </script>
-        <style>
-body {
-    transition: background-color 0.3s ease;
-}
-
-.darkmode {
-    background-color: #333;
-    color: #fff;
-}
-
-.darkmode-toggle {
-    cursor: pointer;
-}
-        </style>
-  </body>
+        }
+    </script>
+</body>
 </html>
