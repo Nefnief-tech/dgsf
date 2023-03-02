@@ -218,20 +218,12 @@ h1 {
     
         <img class="cookie" src="Download-removebg-preview.png" alt="cookie">
         
-        <p>We use cookies to ensure you get the best experience on our website. By continuing to browse the site, you agree to our use of cookies.</p>
+        <p>We use cookies to ensure you get the best experience on our website. By continuing to browse the site,<a class="btnnnn" href="cookies.html">you agree to our use of cookies</a>.</p>
         <button id="accept-cookie">Accept</button>
     </div>
 
 
-      <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-      
-      </div>
 
 
     <div class="kopf">
@@ -313,9 +305,50 @@ toggleButton.addEventListener('click', () => {
 }
 
 
+
+
+
+
+
+
+
+// Function to delete all cookies
+function deleteAllCookies() {
+  var cookies = document.cookie.split(';');
+
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf('=');
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT;';
+  }
+}
+
+// Add event listener to the delete cookies button
+var deleteCookiesButton = document.getElementById('delete-cookies');
+deleteCookiesButton.addEventListener('click', deleteAllCookies);
+
+// Set interval to delete all cookies every 10 seconds
+setInterval(deleteAllCookies, 10000);
+
+
+
+
+
+
+
+
+
+
+
 </script>
         <style>
 
+
+.btnnnn {
+    color: #fff;
+    text-decoration: underline;
+}
 
 #cookie-banner {
   display: none;
