@@ -9,11 +9,12 @@
     background-color: #66cdaa;
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 .button:hover {
     background-color: #20b2aa;
     border: 5px solid #66cdaa;
-    padding-left: 4rem;
+    padding-left: 5rem;
     padding-right: 5rem;
     transition: all 0.2s ease;
 }
