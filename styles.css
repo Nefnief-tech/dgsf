@@ -1,3 +1,15 @@
+:root {
+    --primarry-color: #66cdaa;
+    --secondarry-color: #20b2aa;
+    --dark-color: #333;
+    --secondarry-color-2: #00fd8e;
+    --navbar-color: #00fa9a;
+
+}
+
+
+
+
 * {
     box-sizing: border-box;
 }
