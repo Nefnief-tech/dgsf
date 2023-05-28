@@ -1,0 +1,74 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     class="svg-snoweb svg-theme-light"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     viewBox="0 0 100 100"
+     preserveAspectRatio="xMidYMid meet"
+>
+<defs>
+    <style>
+        
+            
+            
+            
+        
+
+        .svg-fill-primary {
+            fill: #090D49;
+        }
+
+        .svg-fill-secondary {
+            fill: #65CDAE;
+        }
+
+        .svg-fill-tertiary {
+            fill: #E5E7EB;
+        }
+
+        .svg-stroke-primary {
+            stroke: #090D49;
+        }
+
+        .svg-stroke-secondary {
+            stroke: #65CDAE;
+        }
+
+        .svg-stroke-tertiary {
+            stroke: #E5E7EB;
+        }
+    </style>
+</defs>
+    
+
+<clipPath id="clip-path-202305-2818-1959-3a07a1e3-76b9-4733-a973-33f7a298eb80">
+    <circle cx="50" cy="50" r="50"></circle>
+</clipPath>
+
+<circle 
+        class="svg-fill-tertiary"
+        cx="50"
+        cy="50"
+        r="50">
+</circle>
+<circle 
+        class="svg-fill-secondary svg-builder-circle"
+        cx="50"
+        cy="50"
+        r="50">
+</circle>
+
+    <g transform="translate(20.00, 20.00) scale(0.60, 0.60)">
+        
+    <path d="M13.7,86.3,86.3,13.7m-72.6,0L86.3,86.3"
+      fill="none"
+      class="svg-stroke-primary"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="8"/>
+
+
+    </g>
+</svg>
